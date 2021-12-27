@@ -18,6 +18,12 @@ const Home: NextPage = () => {
         <p className={styles.description}>Small animations with threejs</p>
 
         <div className={styles.grid}>
+          <Link href="/examples/mini-factory">
+            <a className={styles.card}>
+              <h2>Mini factory</h2>
+              <p>A toon mini factory with smoke.</p>
+            </a>
+          </Link>
           <Link href="/examples/starter">
             <a className={styles.card}>
               <h2>Basic context</h2>
