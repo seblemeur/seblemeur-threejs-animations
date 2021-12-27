@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  const test = "dzdz";
   return (
     <div className={styles.container}>
       <Head>
@@ -18,23 +18,15 @@ const Home: NextPage = () => {
         <p className={styles.description}>Small animations with threejs</p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="/threejsjourney/starter">
+            <a className={styles.card}>
+              <h2>Basic context</h2>
+              <p>
+                Starter with nextjs and threejs with a scene, camera with
+                control, light, cube, render, tick function.
+              </p>
+            </a>
+          </Link>
         </div>
       </main>
     </div>
