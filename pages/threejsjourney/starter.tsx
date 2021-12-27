@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import CanvasContainer from "../../components/canvas-container";
 
 const Starter: NextPage = () => {
   // Canvas
@@ -9,8 +10,8 @@ const Starter: NextPage = () => {
 
   // Sizes
   const sizes = {
-    width: 800,
-    height: 400,
+    width: 1000,
+    height: 600,
   };
 
   // Scene
@@ -32,7 +33,7 @@ const Starter: NextPage = () => {
   const ambientLight = new THREE.AmbientLight("#ffffff", 1);
   scene.add(ambientLight);
 
-  // Walls
+  // Cube
   const cube = new THREE.Mesh(
     new THREE.BoxBufferGeometry(4, 2.5, 4),
     new THREE.MeshStandardMaterial({ color: "#ff00ff" })
@@ -71,9 +72,9 @@ const Starter: NextPage = () => {
     }
   });
   return (
-    <div>
+    <CanvasContainer>
       <div ref={canvas}></div>
-    </div>
+    </CanvasContainer>
   );
 };
 
