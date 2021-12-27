@@ -29,6 +29,9 @@ const Starter: NextPage = () => {
   camera.position.z = 5;
   scene.add(camera);
 
+  const axesHelper = new THREE.AxesHelper(5);
+  scene.add(axesHelper);
+
   // Ambient light
   const ambientLight = new THREE.AmbientLight("#ffffff", 1);
   scene.add(ambientLight);
@@ -36,7 +39,7 @@ const Starter: NextPage = () => {
   // Cube
   const cube = new THREE.Mesh(
     new THREE.BoxBufferGeometry(4, 2.5, 4),
-    new THREE.MeshStandardMaterial({ color: "#ff00ff" })
+    new THREE.MeshStandardMaterial({ color: "#ff00ff", wireframe: true })
   );
 
   scene.add(cube);
