@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <p className={styles.description}>Small animations with threejs</p>
 
         <div className={styles.grid}>
-          <Link href="/threejsjourney/starter">
+          <Link href="/examples/starter">
             <a className={styles.card}>
               <h2>Basic context</h2>
               <p>
