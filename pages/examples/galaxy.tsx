@@ -29,9 +29,6 @@ const Galaxy: NextPage = () => {
   camera.position.z = 5;
   scene.add(camera);
 
-  const axesHelper = new THREE.AxesHelper(5);
-  scene.add(axesHelper);
-
   // Ambient light
   const ambientLight = new THREE.AmbientLight("#ffffff", 1);
   scene.add(ambientLight);
