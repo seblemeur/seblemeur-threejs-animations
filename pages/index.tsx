@@ -13,9 +13,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Editor</h1>
-
-        <p className={styles.description}>Small animations with threejs</p>
+        <h1 className={styles.title}>Small animations with threejs</h1>
 
         <div className={styles.grid}>
           <Link href="/examples/galaxy">
