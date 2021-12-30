@@ -16,6 +16,12 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>Small animations with threejs</h1>
 
         <div className={styles.grid}>
+          <Link href="/examples/hamburger-with-blender">
+            <a className={styles.card}>
+              <h2>Hamburger</h2>
+              <p>Create with blender and exported to threejs</p>
+            </a>
+          </Link>
           <Link href="/examples/galaxy">
             <a className={styles.card}>
               <h2>Galaxy</h2>
