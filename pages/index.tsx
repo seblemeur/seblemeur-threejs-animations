@@ -14,6 +14,13 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Small animations with threejs</h1>
+        <p className={styles.description}>
+          Animations created with the ultimate Three.js course by{" "}
+          <a target="_blank" href="https://threejs-journey.com/">
+            Bruno Simon
+          </a>
+          .
+        </p>
 
         <div className={styles.grid}>
           <Link href="/examples/hamburger-with-blender">
